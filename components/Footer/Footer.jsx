@@ -40,10 +40,10 @@ const Footer = () => {
                         <i className='fa-solid fa-phone'></i>
                         (+234) 807-548-9362
                     </span>
-                    <span>
+                    {/* <span>
                         <i className='fa-solid fa-envelope'></i>
                         mosesnwigberi@icloud.com
-                    </span>
+                    </span> */}
                     <span>
                         <i className='fa-solid fa-envelope'></i>
                         mosesnwigberi@gmail.com
