@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-height: 700px;
+    font-family:  'Nunito-Bold', arial;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 3;
+}
+
+.overlay {
+    background-color: rgba(15, 23, 43, .9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    width: 82%;
+    height: 75%;
+    z-index: 3;
+    display: flex;
+    flex-flow: row wrap;
+    color: whitesmoke;
+
+}
+.book {
+    width: fit-content;
+    height: fit-content;
+}
+.caption h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.caption > div {
+    flex: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.caption > div:nth-child(1) {
+    padding-bottom: 100px;
+}
+.caption > div button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+.caption > div p {
+    padding-right: 15px;
+    line-height: 1.7;
+} 
+
+/* .caption > div:nth-child(2) > div.spin{
+    animation: spin 20s infinite linear;
+} */
+
+.spin {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    border-radius: 50%;
+}
+.spin img {
+    z-index: 100;
+}
+/* .caption > div:nth-child(2) {
+   
+} */
+
+
+
+@keyframes spin {
+	0% {
+		transform: none;
+	} 
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+@-webkit-keyframes spin {
+	0% {
+		transform: none;
+	} 
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+@media screen and (max-width:1230px) {
+    .spin {
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:975px) {
+    .caption > div {
+        flex: 100%;
+    }
+    .hero {
+        min-height: 1100px;
+    }
+    .caption h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .caption p {
+        text-align: center;
+    }
+    .book {
+        margin: auto;
+    }
+    .caption > div:nth-child(1) {
+        padding-bottom: 0px;
+    }
+}
+@media screen and (max-width:490px) {
+    .spin {
+        width: 320px;
+        height: 320px;
+    }
+    .caption {
+        width: 85%;
+    }
+    .caption > div:nth-child(2) {
+        height: 350px;
+    }
+    .caption {
+        transform: translate(-50%,-45%);
+    }
+}

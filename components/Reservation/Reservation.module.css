@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.reservation {
+    width: 100%;
+    min-height: 650px;
+    padding: 20px 0;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 43, .75);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 80%;
+    z-index: 3;
+}
+.form h3 {
+    text-align-last: center;
+    color: orangered;
+    font-family: 'Pacifico';
+}
+.form h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.form h2 span {
+    color: orangered;
+    font-family: 'Pacifico';
+}
+.form p {
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+}
+.form form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 40px;
+}
+.form form > div {
+    flex: 30%;
+    margin: 0 10px;
+}
+.form form input {
+    width: 100%;
+    background-color: #010F1D;
+    border-radius: 30px;
+    height: 55px;
+    outline: none;
+    color: white;
+    border:1px solid rgb(100, 100, 100);
+    padding: 20px;
+}
+.form form input::placeholder {
+    color: white;
+}
+.form form textarea {
+    width: 100%;
+    background-color: #010F1D;
+    margin-top: 30px;
+    border-radius: 30px;
+    height: 80%;
+    color: white;
+    padding: 30px;
+    outline: none;
+}
+.form form textarea::placeholder {
+    color: white;
+}
+.submit {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.submit button {
+    background-color: orangered;
+    color: white;
+    border:none;
+    padding: 16px 30px;
+    border-radius: 16px;
+}
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about span {
+    width: 50px;
+    height: 2px;
+    margin-left: 14px;
+    background-color: orangered;
+}
+.about span:nth-child(1) {
+    width: 50px;
+    height: 2px;
+    margin-right: 14px; 
+    background-color: orangered;
+}
+@media screen and (max-width:770px) {
+    .form form > div {
+        flex: 100%;
+        margin: 10px;
+    }
+    .form form input:nth-child(1), .form form input:nth-child(2) {
+        width: 100% !important;
+    }
+    .reservation {
+        min-height: 1000px;
+    }
+    .form form textarea {
+        margin-top: 10px;
+    }
+    
+}

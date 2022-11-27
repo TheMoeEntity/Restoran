@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+.personnel {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+.personnel h3 {
+    text-align: center;
+    color: orange;
+    font-family: 'Pacifico';
+    margin-top: 40px;
+}
+.personnel h2 {
+    text-align: center;
+    font-family:  'Nunito-Bold', arial;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.chefs {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    padding-bottom: 50px;
+
+}
+.chefs > div {
+    flex:20%;
+    margin:10px;
+}
+
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 80px auto;
+}
+.testimonials > div {
+    flex: 20%;
+    margin: 15px;
+}
+
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.about span {
+    width: 50px;
+    height: 2px;
+    margin-left: 14px;
+    background-color: orange;
+}
+.about span:nth-child(1) {
+    width: 50px;
+    height: 2px;
+    margin-right: 14px;
+    background-color: orange;
+}
+@media screen and (max-width:1069px) {
+    .chefs > div {
+        flex: 40%;
+        margin: 30px 15px;
+    }
+    .chefs {
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width:1045px) {
+    .chefs {
+        justify-content: center;
+    }
+    .chefs > div {
+        flex: 60%;
+    }
+}
+@media screen and (max-width:1211px) {
+    .testimonials {
+        justify-content: center;
+        width: 100% !important;
+    }
+    .testimonials > div {
+        flex: 40%;
+    }
+    .testimonials > div:nth-child(3) {
+        max-width: 60%;
+    }
+}
+@media screen and (max-width:884px) {
+    .testimonials > div {
+        flex: 100%;
+    }
+    .testimonials > div {
+        max-width: 80%;
+        margin:15px 0;
+    }
+    .testimonials > div:nth-child(3) {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:595px) {
+    .testimonials > div {
+        max-width: 95%;
+        margin:15px 0;
+        max-height: 360px;
+    }
+    .testimonials > div:nth-child(3) {
+        max-width: 95%;
+    }
+    }

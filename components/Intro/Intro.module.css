@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+.intro {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 70px;
+}
+.desc {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 80px auto;
+}
+.desc > div {
+    flex: 20%;
+    margin: 15px;
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 20px auto;
+    height: 550px;
+    margin-bottom: 70px;
+}
+.gallery > div {
+    flex: 40%;
+    position: relative;
+    margin: 10px;
+}
+/* .gallery > div:nth-child(1) {
+
+} */
+.gallery > div:nth-child(1) > div {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+}
+.gallery > div:nth-child(2) h3 {
+    font-family: 'Pacifico';
+    color: orange;
+    font-size: 25px;
+  
+}
+.gallery > div:nth-child(2) h2 {
+    font-family:  'Nunito-Bold', arial;
+    font-size: 35px;
+}
+.gallery > div:nth-child(2) h2 span {
+    color: orange;
+}
+.grid {
+    width: 100%;
+    height: 100%;
+}
+.grid > div  {
+    flex: 40%;
+    margin: 10px;
+    position: relative;
+}
+.second {
+    width:70%;
+    height: 70%;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.third {
+    width:85%;
+    height: 85%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.gallery > div:nth-child(2) p {
+    padding: 18px 0px;
+}
+.gallery > div:nth-child(2) {
+    padding: 0 20px;
+}
+.gallery > div:nth-child(2) > div {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    
+    /* justify-content: space-between; */
+}
+
+.gallery > div:nth-child(2) > div > div {
+    flex: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+}
+
+.gallery > div:nth-child(2) > div > div h2 {
+    border-left: 10px solid orange;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: orange;
+}
+.gallery > div:nth-child(2) button {
+    margin-top: 40px;
+    background-color: orange;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+}
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.about span {
+    width: 50px;
+    height: 2px;
+    margin-left: 14px;
+    background-color: orange;
+}
+@media screen and (max-width:974px) {
+    .desc > div {
+        flex: 40%;
+    }
+}
+@media screen and (max-width:545px) {
+    .desc > div {
+        flex: 100%;
+    }
+}
+
+
+@media screen and (max-width:1120px) {
+    .grid {
+        width: 450px;
+        height: 450px;
+    }
+}
+@media screen and (max-width:1025px) {
+    .gallery > div {
+        flex: 100%;
+    }
+    .grid {
+        width: 90%;
+        height: 90%;
+    }
+    .gallery > div:nth-child(1) {
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro {
+        height: 1700px !important;
+    }
+}
+
+@media screen and (max-width:716px) {
+    .grid {
+        width: 500px;
+        height: 500px;
+    }
+    .intro {
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width:546px) {
+    .grid {
+        width: 450px;
+        height: 450px;
+    }
+    .gallery > div:nth-child(1) {
+        height: 430px;
+    }
+    .intro {
+        height: 2000px !important;
+    }
+}
+@media screen and (max-width:483px) {
+    .grid {
+        width: 350px;
+        height: 350px;
+    }
+    .gallery > div:nth-child(2) > div > div > div {
+        margin: 8px 0;
+    }
+    .intro {
+        margin-bottom: 300px;
+    }
+}
+@media screen and (max-width:400px) {
+    .grid {
+        width: 350px;
+        height: 350px;
+    }
+    .gallery > div {    
+        margin: 5px 0;
+    }
+    .gallery {
+        width: 97%;
+    }
+}

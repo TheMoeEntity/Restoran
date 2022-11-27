@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+.popular {
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+    padding: 30px 0;
+    font-family:  'Nunito-Bold', arial;
+}
+.caption h3 {
+    font-family: 'Pacifico';
+    text-align: center;
+    color: orangered;
+}
+.caption h3 span {
+    color: black;
+    margin-right: 15px;
+}
+.caption h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.caption h2 span {
+    color: orange; 
+}
+.caption p {
+    text-align: center;
+    line-height: 1.7;
+    padding: 10px 50px;
+    color: #575757;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 20px auto;
+}
+.dishes > div {
+    flex: 20%;
+    margin: 15px;
+    
+}
+.menu {
+    width: fit-content;
+    height: fit-content;
+    margin:40px auto;
+
+}
+.menu button {
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .caption p {
+        padding: 0 45px;
+        /* text-align: justify; */
+    }
+}
+@media screen and (max-width:622px)  {
+    .dishes {
+        justify-content: center;
+    }
+}
+

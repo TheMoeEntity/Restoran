@@ -1,0 +1,79 @@
+.Card {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding:20px 30px;
+    padding-bottom: 10px;
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: 5px 9px 15px 0 rgba(125, 125, 125, 0.2);
+    cursor: pointer;
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
+    max-width: 400px;
+  
+}
+.Card:hover .socials {
+    max-height: 70px;
+}
+.profile {
+    overflow: hidden;
+}
+
+.Card > div:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s ease;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+.Card > div img {
+    border-radius: 50%;
+}
+.details {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.details b {
+    font-size: 20px;
+}
+.details h4 {
+    font-weight: 300;
+    margin: 8px;
+}
+.socials {
+    max-height: 0px;
+    overflow: hidden;
+    height: 40px;
+    transition:0.5s ease;
+    text-align: left;
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.socials > div {
+    width: 110px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.socials span {
+    height: 100%;
+    background-color: orange;
+    padding:0 7px;
+    padding-top: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+

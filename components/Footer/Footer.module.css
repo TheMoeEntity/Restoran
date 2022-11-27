@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+#footer {
+    width: 100%;
+    min-height: 800px;
+    padding:60px 60px;
+    max-height: auto;
+    background-color: #0F172B;
+    color: orange;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-family:  'Nunito-Bold', arial !important;
+}
+#footer > div {
+    flex: 40%;
+    margin: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    transition: 0.6s;
+    
+}
+.first {
+    display: flex;
+    height: 650px;
+}
+
+#footer > div:nth-child(1) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    /* transform: translate(-150%); */
+
+}
+
+#footer > div:nth-child(2) {
+    text-align: center;
+    display: block;
+    padding:20px 10px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    font-family: 'Pacifico';
+    /* transform: translate(150%); */
+
+}
+/* #footer > div:nth-child(2).reveal, #footer > div:nth-child(1).reveal {
+    transform: none;
+} */
+
+#footer > div:nth-child(1) > div {
+    flex: 30%;
+    
+}
+#footer > div:nth-child(1) > div:nth-child(1) {
+    border-bottom: 1px solid orange;
+    position: relative;
+    max-height: 120px;
+}
+#footer > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid orange;
+    max-height: 350px;
+    padding: 40px 0;
+
+}
+#footer > div:nth-child(1) > div:nth-child(2) > div {
+    flex: 50%;
+    display: flex;
+    flex-flow: column wrap;
+}
+#footer > div:nth-child(1) > div:nth-child(2) h4 {
+    margin-bottom: 0px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+#footer > div:nth-child(1) > div:nth-child(2) h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-family: 'Pacifico';
+}
+#footer > div:nth-child(1) > div:nth-child(3) {
+    flex-grow: 100;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-height: 120px;
+    width: 100%;
+
+}
+#footer > div:nth-child(1) > div:nth-child(3) > span {
+    flex: 30%;
+    margin: 2px;
+    font-size: 12.5px;
+}
+#footer > div:nth-child(1) > div:nth-child(3) i {
+    margin-right: 7px;
+}
+.zzlogo h2 {
+    margin-bottom: 8px;
+}
+.zzlogo span {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f2f3f7;
+    padding: 9px;
+}
+.zzlogo {
+    position: absolute;
+    bottom: 15px;
+}
+#footer > div:nth-child(2) h2 {
+    text-align: center !important;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+
+#footer > div:nth-child(2) form {
+    width: 100%;
+    margin-top: 30px;
+}
+#footer > div:nth-child(2) form input {
+    background-color: transparent;
+    border: 1px solid orange;
+    outline: none;
+    display: block;
+    width: 90%;
+    margin: 20px auto !important;
+    height: 50px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: orange;
+
+}
+#footer > div:nth-child(2) form textarea {
+    background-color: transparent;
+    border: 1px solid orange;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: orange;
+    width: 90%;
+    margin: 20px auto !important;
+}
+#footer > div:nth-child(2) form button, #footer > div:nth-child(1) button  {
+    background: none;
+    border: 1px solid orange;
+    color: orange;
+    width: fit-content;
+    height: 40px;
+    margin-top: 20px;
+    width: 100px;
+
+}
+@media screen and (max-width:850px) {
+    #footer > div:nth-child(1) > div:nth-child(3) {
+        max-height: 150px;
+    }
+    #footer > div {
+        flex: 100%;
+    }
+    #footer {
+        padding: 10px;
+    }
+    #footer > div:nth-child(1) > div:nth-child(3) > span {
+        flex: 100%;
+    }
+    #footer > div:nth-child(2) form input, #footer > div:nth-child(2) form textarea {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #footer {
+        background-attachment: scroll;
+        background-size:700px;
+        background-repeat: repeat;
+    }
+}
+

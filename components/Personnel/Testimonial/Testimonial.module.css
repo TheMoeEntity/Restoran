@@ -1,0 +1,86 @@
+.Card {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding:20px 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    border-radius: 8px;
+    box-shadow: 5px 9px 15px 0 rgba(125, 125, 125, 0.2);
+    position:relative;
+    overflow: hidden;
+
+}
+.quotes i {
+    font-size: 30px;
+    color: orangered;
+}
+
+.Card p {
+    font-weight: 300;
+    font-size: 13px;
+    font-style: italic;
+    color: #6e6e6e;
+    line-height: 1.8;
+}
+.Card span {
+    margin: 9px 0;
+}
+.Card span i {
+    color: orange;
+}
+.food {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 130px;
+    height: 130px;
+
+}
+.food img {
+    border-radius: 50%;
+}
+.profile {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.profile > div {
+   
+}
+.profile > div:nth-child(1) {
+    width: 95px;
+    position: relative;
+    height: 95px;
+    flex: 18%;
+    margin-left: 0 !important;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.profile > div:nth-child(1) > div {
+    position: relative;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+.profile > div:nth-child(1) > div img {
+    border-radius: 50%;
+}
+.profile > div:nth-child(2) {
+    flex: 30%;
+}
+.profile aside {
+    font-weight: 300;
+    font-size: small;
+    padding-top: 15px;
+}
+@media screen and (max-width:1207px) {
+
+    .Card {
+        max-width: 480px;
+    }
+}
