@@ -84,7 +84,15 @@
 }
 .spin img {
     z-index: 100;
-    animation: spin 20s infinite linear;
+    /* animation: spin 20s infinite linear; */
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 /* .caption > div:nth-child(2) {
    
