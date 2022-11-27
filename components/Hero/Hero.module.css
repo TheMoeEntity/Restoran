@@ -84,6 +84,7 @@
 }
 .spin img {
     z-index: 100;
+    animation: spin 20s infinite linear;
 }
 /* .caption > div:nth-child(2) {
    

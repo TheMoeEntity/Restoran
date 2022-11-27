@@ -28,7 +28,7 @@ function Hero() {
             </div>
             <div>
                 <div className={styles.spin}>
-                    <Image src={grill} alt="grill" priority layout="fill" objectFit='cover' />
+                    <Image className={styles.spinImg} src={grill} alt="grill" priority layout="fill" objectFit='cover' />
                 </div>
             </div>
 
