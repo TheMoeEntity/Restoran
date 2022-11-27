@@ -9,18 +9,33 @@
     justify-content: space-around;
     border-radius: 8px;
     box-shadow: 5px 9px 15px 0 rgba(125, 125, 125, 0.2);
+    transition: background 0.7s ease;
 
+}
+.Card:hover {
+    background: orange;
+}
+.Card:hover i {
+    color: white;
+}
+.Card:hover p {
+    color: white;
+}
+.Card:hover h3 {
+    color: white;
 }
 .Card i {
     color: orange;
     font-size: 50px;
     font-weight: bolder;
+    transition: color 0.7s ease;
 }
 .Card span {
     margin: 10px 0px;
 }
 .Card h3 {
     font-family: 'Nunito-Bold', arial;
+    transition: color 0.4s ease;
 }
 .Card p {
     color: #6c6c6c;
