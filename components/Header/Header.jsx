@@ -7,13 +7,15 @@ const Header = ({open}) => {
     initial="hidden" animate="visible"
     variants={{
        hidden: {
-         y:'-100vh',
+         x:'100vw',
        },
        visible: {
-         y:0,
+         x:0,
          transition: {
-           delay: .5,
-           duration:0.9
+           delay: .55,
+           duration:1,
+           type:"spring",
+           bounce:0.55
          }
        }
      }}

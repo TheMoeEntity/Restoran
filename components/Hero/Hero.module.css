@@ -81,26 +81,30 @@
     position: relative;
     z-index: 100;
     border-radius: 50%;
+    opacity: 0;
+    transition: 0.6s;
+    transform: scale(0.1) translateY(400px);
 }
-.spin img.rotate {
+.animateIn {
+    opacity: 1;
+    transform: scale(1) translate(0) ;
+}
+.spin.anim {
     z-index: 100;
-    /* animation: spin 20s infinite linear; */
-    -webkit-animation-name: spin;
+    -webkit-animation-name: anim;
     -webkit-animation-duration: 20s;
     -webkit-animation-fill-mode: forwards;
-    animation-name: spin;
-    animation-duration: 20s;
+    animation-name: anim;
+    animation-duration: 0.8s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
 }
-/* .caption > div:nth-child(2) {
-   
-} */
 
 
 
-@keyframes spin {
+
+@keyframes anim {
 	0% {
 		transform: none;
 	} 
@@ -111,7 +115,7 @@
 }
 
 
-@-webkit-keyframes spin {
+@-webkit-keyframes anim {
 	0% {
 		transform: none;
 	} 

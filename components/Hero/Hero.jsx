@@ -6,9 +6,15 @@ import Header from '../Header/Header'
 import Sidebar from '../Sidebar/Sidebar'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
+import { useRef } from 'react'
 
 function Hero() {
     const [sidebar, setSideBar] = useState(false) 
+    const spinRef = useRef(null)
+    useEffect(()=> {
+        spinRef.current.classList.add(styles.animateIn)
+      },[])
 
   return (
     <div className={styles.hero}>
@@ -30,8 +36,10 @@ function Hero() {
               x:0,
               opacity:1,
               transition: {
-                delay: 1.5,
-                duration:0.8
+                delay: 1,
+                duration:1,
+                type:"spring",
+                bounce:0.4
               }
             }
           }}
@@ -46,7 +54,7 @@ function Hero() {
             </div>
             </motion.div>
             <div>
-                <div className={styles.spin}>
+                <div ref={spinRef} className={styles.spin}>
                     <Image className={`${styles.spinImg}`} src={grill} alt="grill" priority layout="fill" objectFit='cover' />
                 </div>
             </div>
