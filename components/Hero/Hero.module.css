@@ -5,6 +5,7 @@
     position: relative;
     min-height: 700px;
     font-family:  'Nunito-Bold', arial;
+    overflow: hidden;
 }
 .header {
     position: absolute;

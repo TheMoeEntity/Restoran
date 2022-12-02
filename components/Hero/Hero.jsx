@@ -8,6 +8,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 import { useRef } from 'react'
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 
 function Hero() {
     const [sidebar, setSideBar] = useState(false) 
@@ -25,6 +26,9 @@ function Hero() {
         <Image src={cake} alt="Hero Image" priority layout="fill" objectFit='cover' />
         <div className={styles.overlay}></div>
         <div className={styles.caption}>
+        
+        <ParallaxProvider>
+            <Parallax speed={-10}>
             <motion.div
          initial="hidden" animate="visible"
          variants={{
@@ -53,6 +57,8 @@ function Hero() {
                 </div>
             </div>
             </motion.div>
+        </Parallax>
+        </ParallaxProvider>
             <div>
                 <div ref={spinRef} className={styles.spin}>
                     <Image className={`${styles.spinImg}`} src={grill} alt="grill" priority layout="fill" objectFit='cover' />
