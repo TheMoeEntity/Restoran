@@ -4,6 +4,8 @@ import grill from './../../public/assets/grill.png'
 import steak from './../../public/assets/bg-hero.jpeg'
 import efoRiro from './../../public/assets/efo-riro.webp'
 import firstsect from './../../public/assets/firstsect.webp'
+import { useRef,useEffect } from 'react'
+import { slide } from '../../Helpers'
 
 const assets = [
   {
@@ -28,8 +30,15 @@ const assets = [
   }
 ]
 const Popular = () => {
+
+  const container = useRef(null)
+  useEffect(()=> {
+    window.addEventListener("scroll", ()=> {
+      slide(container,190)
+    })
+  },[])
   return (
-    <div className={styles.popular}>
+    <div ref={container} className={styles.popular}>
         <div className={styles.caption}>
             <h3><span><i className="fa fa-cutlery" aria-hidden="true"></i></span>  Popular Menu</h3>
             <h2>Our Popular Delicious <span>Foods</span></h2>

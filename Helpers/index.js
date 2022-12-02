@@ -1,9 +1,9 @@
+
 export function animate(container,revealpoint=150,galleryref,appear) {
 
-
-    let widths = container.current.children
     let height = window.innerHeight
-
+    let widths = container.current.children
+  
     for (const child of widths) {
 
         let revealTop = child.getBoundingClientRect().top;
@@ -34,3 +34,25 @@ export function animate(container,revealpoint=150,galleryref,appear) {
   }
 
 }
+
+export function slide(container,revealpoint=150) {
+  let height = window.innerHeight
+
+  const reveal = ()=> {
+    let counter = 0
+    const interval = setInterval(() => {
+        if (counter == 3) {
+          clearInterval(interval)
+        }
+          
+        container.current.children[1].children[counter].style.transform = 'translateY(0)'
+        container.current.children[1].children[counter].style.opacity= '1'
+        counter++
+      }, 550);
+  }
+
+
+  if (container.current.getBoundingClientRect().top < height - revealpoint) {
+    reveal()
+  }
+} 

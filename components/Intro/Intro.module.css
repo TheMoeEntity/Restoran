@@ -39,7 +39,7 @@
 
 }
 .gallery > div:nth-child(2) {
-    transform: translateY(300px);
+    transform: translateY(-300px);
     opacity: 0;
     overflow: visible;
 }
@@ -220,7 +220,7 @@
         margin: 8px 0;
     }
     .intro {
-        margin-bottom: 300px;
+        margin-bottom: 40px;
     }
 }
 @media screen and (max-width:400px) {

@@ -10,7 +10,7 @@ const Dishcard = ({img,title,price}) => {
         </div>
         <div className={styles.description}>
             <div>
-                Grill
+                Grill 
             </div>
             <div className={styles.rating}>
                 <span>
