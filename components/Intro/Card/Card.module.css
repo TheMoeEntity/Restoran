@@ -9,21 +9,21 @@
     justify-content: space-around;
     border-radius: 8px;
     box-shadow: 5px 9px 15px 0 rgba(125, 125, 125, 0.2);
-    transition: 0.85s ease;
+    transition: 0.5s ease;
     opacity: 0;
 
 }
 .Card:nth-child(4) {
-    transform: scale(0.3) translateY(850px);
+    transform: scale(0.3) translateY(450px);
 }
 .Card:nth-child(3) {
-    transform: scale(0.3) translateY(650px);
-}
-.Card:nth-child(2) {
     transform: scale(0.3) translateY(400px);
 }
-.Card:nth-child(1) {
+.Card:nth-child(2) {
     transform: scale(0.3) translateY(300px);
+}
+.Card:nth-child(1) {
+    transform: scale(0.3) translateY(200px);
 }
 
 .Card:hover {

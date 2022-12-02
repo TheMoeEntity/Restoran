@@ -8,6 +8,7 @@ import about4 from '../../public/assets/about-4.jpeg'
 import { useEffect } from 'react'
 import { animate } from '../../Helpers'
 import { useRef } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const assets = [
     {
@@ -30,12 +31,27 @@ const assets = [
 const Intro = () => {
 
   const cardsref = useRef(null)
+  const rollIn = ()=> {
+    animate(cardsref,100,styles.animateIn)
+  }
 
   useEffect(()=> {
-    window.addEventListener('scroll', ()=> {
-        animate(cardsref,120,styles.animateIn)
-    })
+    const cards = cardsref.current.children[0]
+
+    console.log(cards)
+    window.addEventListener('scroll',rollIn)
   },[])
+
+  // const [ref, inView] = useInView()
+  // useEffect(()=> {
+
+  //   if (inView) {
+
+  //   } 
+    
+  // },[inView])
+
+
 
   return (
     <div className={styles.intro}>
@@ -48,7 +64,7 @@ const Intro = () => {
         </div>
 
         <div className={styles.gallery}>
-          <div>
+          <div ref={ref}>
           <div className={styles.grid}>
                 <div><Image objectFit='cover' alt='intro pictures' src={about1} layout="fill" /></div>
                 <div>
