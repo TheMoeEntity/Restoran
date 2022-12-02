@@ -4,7 +4,6 @@
     width: 100%;
     height: fit-content;
     padding-bottom: 70px;
-    overflow-x: hidden;
 }
 .desc {
     display: flex;
@@ -40,8 +39,9 @@
 
 }
 .gallery > div:nth-child(2) {
-    transform: translateX(500px);
+    transform: translateY(300px);
     opacity: 0;
+    overflow: visible;
 }
 .gallery > div:nth-child(2) h3 {
     font-family: 'Pacifico';
