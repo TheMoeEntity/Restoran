@@ -5,13 +5,16 @@ import about1 from '../../public/assets/about-1.jpeg'
 import about2 from '../../public/assets/about-2.jpeg'
 import about3 from '../../public/assets/about-3.jpeg'
 import about4 from '../../public/assets/about-4.jpeg'
+import { useEffect } from 'react'
+import { animate } from '../../Helpers'
+import { useRef } from 'react'
 
 const assets = [
     {
       title: "Master Chefs",
       icon: "fa-solid fa-user-tie"
     },
-    {
+    { 
       title: "Quality Food",
       icon: "fa fa-cutlery"
     },
@@ -25,9 +28,18 @@ const assets = [
     }
   ]
 const Intro = () => {
+
+  const cardsref = useRef(null)
+
+  useEffect(()=> {
+    window.addEventListener('scroll', ()=> {
+        animate(cardsref,120,styles.animateIn)
+    })
+  },[])
+
   return (
     <div className={styles.intro}>
-        <div className={styles.desc}>
+        <div ref={cardsref} className={styles.desc}>
             {
             assets.map((item)=> (
                 <Card key={Math.random()} title={item.title} icon={item.icon} />

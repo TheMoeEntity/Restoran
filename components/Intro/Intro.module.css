@@ -99,7 +99,10 @@
     flex-flow: row wrap;
     justify-content:flex-start;
 }
-
+.animateIn {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
 .gallery > div:nth-child(2) > div > div h2 {
     border-left: 10px solid orange;
     padding-left: 10px;
