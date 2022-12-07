@@ -7,6 +7,7 @@ import Personnel from '../components/Personnel/Personnel'
 import Popular from '../components/Popular/Popular'
 import Reservation from '../components/Reservation/Reservation'
 import Sidebar from '../components/Sidebar/Sidebar'
+import Strength from '../components/Strengths/Strength'
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Hero />
       <Intro />
       <Popular />
+      <Strength />
       <Reservation />
       <Personnel />
       <Footer />

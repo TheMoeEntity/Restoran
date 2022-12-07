@@ -1,18 +1,13 @@
 import styles from './Reservation.module.css'
 import Image from 'next/image'
 import restaurant from '../../public/assets/rest.webp'
-import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax'
+
 
 const Reservation = () => {
   return (
-    <ParallaxProvider>
+   
     <div className={styles.reservation}>
         <Image src={restaurant} layout="fill" alt='Book reservation' objectFit='cover' />
-        
-            <ParallaxBanner 
-                layers={[{ image:'./assets/rest.webp', speed: -15 }]}
-                className="aspect-[2/1]"
-            />
         
         <div className={styles.overlay}></div>
         <div className={styles.form}>
@@ -35,7 +30,6 @@ const Reservation = () => {
             <div className={styles.submit}><button>Make Reservation</button></div>
         </div>
     </div>
-    </ParallaxProvider>
   )
 }
 
