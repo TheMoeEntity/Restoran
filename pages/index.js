@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Script from 'next/script'
 import Footer from '../components/Footer/Footer'
+import Gallery from '../components/Gallery/Gallery'
 import Hero from '../components/Hero/Hero'
 import Intro from '../components/Intro/Intro'
 import Personnel from '../components/Personnel/Personnel'
@@ -26,6 +27,7 @@ export default function Home() {
       <Strength />
       <Reservation />
       <Personnel />
+      <Gallery />
       <Footer />
       <Script src='https://kit.fontawesome.com/4ef8c63dd7.js' />
     </div>
