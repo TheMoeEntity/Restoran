@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 .header {
     width: 90%;
-    height: 130px;
+    height: 100px;
     padding: 40px 30px;
     font-family:  'Nunito-Bold', arial;
     display: flex;
