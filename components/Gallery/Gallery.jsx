@@ -9,6 +9,8 @@ const Gallery = () => {
             <p>
             Lorem ipsum dolor sit amet, consectetur <br /> adipisicing elit. Aperiam iusto nesciunt nisi, placeat inventore similique.
             </p>
+            <input type="text" /><input type="text" /><input type="text" />
+
         </div>
     </div>
   )
